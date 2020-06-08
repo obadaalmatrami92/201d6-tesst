@@ -1,3 +1,6 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-vars */
+'use strict';
 var userName = prompt('Enter Your name please');
 var myName = 'ahmad alhrthani';
 var myAge = 33;
@@ -28,7 +31,7 @@ var educationDegreeValid = false;
 // var quantityValid = false;
 // var quantity = '';
 
-var correctAnswersCount = 0
+var correctAnswersCount = 0;
 
 var nameAnswer = false;
 var ageAnswer = false;
@@ -38,49 +41,49 @@ var educationDegreeAnswer = false;
 
 
 while (!nameValid) {
-    name = prompt('My name is Ahmad Alhrthani', 'Yes, Y, No or N').toLocaleLowerCase();
-    if (name == 'yes' || name == 'y' || name == 'no' || name == 'n') {
-        nameValid = true;
-    }
+  name = prompt('My name is Ahmad Alhrthani', 'Yes, Y, No or N').toLocaleLowerCase();
+  if (name == 'yes' || name == 'y' || name == 'no' || name == 'n') {
+    nameValid = true;
+  }
 }
 
 if (name == 'yes' || name == 'y') {
-    correctAnswersCount++;
-    nameAnswer = true;
+  correctAnswersCount++;
+  nameAnswer = true;
 } else {
-    alert('Sory, You should remeber my name, I am Ahmad Alhrthani');
+  alert('Sory, You should remeber my name, I am Ahmad Alhrthani');
 }
 
 
 
 
 while (!ageValid) {
-    age = prompt('My Age is 22', 'Yes, Y, No or N').toLocaleLowerCase();
-    if (age == 'yes' || age == 'y' || age == 'no' || age == 'n') {
-        ageValid = true;
-    }
+  age = prompt('My Age is 22', 'Yes, Y, No or N').toLocaleLowerCase();
+  if (age == 'yes' || age == 'y' || age == 'no' || age == 'n') {
+    ageValid = true;
+  }
 }
 
 if (age == 'no' || age == 'n') {
-    correctAnswersCount++;
-    ageAnswer = true;
+  correctAnswersCount++;
+  ageAnswer = true;
 } else {
-    alert('Sory, You should remeber my age, I am 33');
+  alert('Sory, You should remeber my age, I am 33');
 
 }
 
 while (!genderValid) {
-    gender = prompt('My Gender is Male', 'Yes, Y, No or N').toLocaleLowerCase();
-    if (gender == 'yes' || gender == 'y' || gender == 'no' || gender == 'n') {
-        genderValid = true;
-    }
+  gender = prompt('My Gender is Male', 'Yes, Y, No or N').toLocaleLowerCase();
+  if (gender == 'yes' || gender == 'y' || gender == 'no' || gender == 'n') {
+    genderValid = true;
+  }
 }
 
 if (gender == 'yes' || gender == 'y') {
-    correctAnswersCount++;
-    genderAnswer = true;
+  correctAnswersCount++;
+  genderAnswer = true;
 } else {
-    alert('Sory, You should remeber my gender, I am Male');
+  alert('Sory, You should remeber my gender, I am Male');
 
 }
 
@@ -89,36 +92,36 @@ if (gender == 'yes' || gender == 'y') {
 
 
 while (!favColorValid) {
-    favColor = prompt('My favourite color is Blue', 'Yes, Y, No or N').toLocaleLowerCase();
-    if (favColor == 'yes' || favColor == 'y' || favColor == 'no' || favColor == 'n') {
-        favColorValid = true;
-    }
+  favColor = prompt('My favourite color is Blue', 'Yes, Y, No or N').toLocaleLowerCase();
+  if (favColor == 'yes' || favColor == 'y' || favColor == 'no' || favColor == 'n') {
+    favColorValid = true;
+  }
 }
 
 if (favColor == 'no' || favColor == 'n') {
-    correctAnswersCount++;
-    favColorAnswer = true;
+  correctAnswersCount++;
+  favColorAnswer = true;
 } else {
-    alert('Sory, You should remeber my Fvourite color, It is Red');
+  alert('Sory, You should remeber my Fvourite color, It is Red');
 
 }
 
 
 
 while (!educationDegreeValid) {
-    educationDegree = prompt('My education grade is Master', 'Yes, Y, No or N').toLocaleLowerCase();
-    if (educationDegree == 'yes' || educationDegree == 'y' || educationDegree == 'no' || educationDegree == 'n') {
-        educationDegreeValid = true;
-    }
+  educationDegree = prompt('My education grade is Master', 'Yes, Y, No or N').toLocaleLowerCase();
+  if (educationDegree == 'yes' || educationDegree == 'y' || educationDegree == 'no' || educationDegree == 'n') {
+    educationDegreeValid = true;
+  }
 }
 
 
 if (educationDegree == 'yes' || educationDegree == 'y') {
-    correctAnswersCount++;
+  correctAnswersCount++;
 
-    educationDegreeAnswer = true;
+  educationDegreeAnswer = true;
 } else {
-    alert('Sory, You should remeber my Grade, I am a master degree');
+  alert('Sory, You should remeber my Grade, I am a master degree');
 
 }
 
@@ -182,29 +185,29 @@ document.getElementById('correctAnswers').innerHTML = 'Number of correct answers
 
 
 if (name == 'yes' || name == 'y') {
-    document.getElementById('myName').style.color = 'green';
+  document.getElementById('myName').style.color = 'green';
 }
 
 if (age == 'no' || age == 'n') {
-    document.getElementById('myAge').style.color = 'green';
+  document.getElementById('myAge').style.color = 'green';
 }
 
 if (gender == 'yes' || gender == 'y') {
-    document.getElementById('myGender').style.color = 'green';
+  document.getElementById('myGender').style.color = 'green';
 
 }
 
 if (favColor == 'no' || favColor == 'n') {
-    document.getElementById('myFavColor').style.color = 'green';
+  document.getElementById('myFavColor').style.color = 'green';
 
 }
 
 if (educationDegree == 'yes' || educationDegree == 'y') {
-    document.getElementById('myEducationGrade').style.color = 'green';
-    myEducationGrade
+  document.getElementById('myEducationGrade').style.color = 'green';
+  myEducationGrade;
 }
 
-console.log('You answer ' + correctAnswersCount + ' correctly')
+console.log('You answer ' + correctAnswersCount + ' correctly');
 
 
 
